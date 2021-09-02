@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WindowsAPICodePack/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WindowsAPICodePack/1.1.2": {
+      "sha512": "1POQrQOlLPB996AmezxnzLp1okN4gnuDsF6b3ka5dPassA139sJwL80fJGkleRMDzUCAU0rjmBc/2ZievbPhxQ==",
+      "type": "package",
+      "path": "windowsapicodepack/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Windows Logo.png",
+        "content/license.txt",
+        "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll",
+        "lib/Microsoft.WindowsAPICodePack.Sensors.dll",
+        "lib/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll",
+        "lib/Microsoft.WindowsAPICodePack.dll",
+        "windowsapicodepack.1.1.2.nupkg.sha512",
+        "windowsapicodepack.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "WindowsAPICodePack >= 1.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\vinny\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\FileShuffle.csproj",
+      "projectName": "FileShuffle",
+      "projectPath": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\FileShuffle.csproj",
+      "packagesPath": "C:\\Users\\vinny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "WindowsAPICodePack": {
+            "target": "Package",
+            "version": "[1.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WindowsAPICodePack 1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "WindowsAPICodePack",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
