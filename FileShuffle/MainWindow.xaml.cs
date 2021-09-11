@@ -24,6 +24,9 @@ namespace FileShuffle
     {
         public MainWindow()
         {
+            Microsoft.Win32.RegistryKey key;
+            key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("Shuffle Files");
+            key.SetValue("Shuffle", "Files");
             InitializeComponent();
         }
 
@@ -81,26 +84,34 @@ namespace FileShuffle
                             "Error",
                             MessageBoxButton.OK,
                             MessageBoxImage.Error);
+                        break;
                     }
                 }
             }
+
+            MessageBoxResult processingCompleteMessage = MessageBox.Show(
+                "Shuffle Complete. ",
+                "Done",
+                MessageBoxButton.OK,
+                MessageBoxImage.None);
+
         }
 
         private void browseButton_Click(object sender, RoutedEventArgs e)
         {
-            //var dialog = new CommonOpenFileDialog();
-            //dialog.IsFolderPicker = true;
-            //dialog.Multiselect = false;
-            //dialog.EnsurePathExists = true;
-            //dialog.AllowNonFileSystemItems = true;
-            //CommonFileDialogResult result = dialog.ShowDialog();
+            var dialog = new CommonOpenFileDialog();
+            dialog.IsFolderPicker = true;
+            dialog.Multiselect = false;
+            dialog.EnsurePathExists = true;
+            dialog.AllowNonFileSystemItems = true;
+            CommonFileDialogResult result = dialog.ShowDialog();
 
-            //if (result == CommonFileDialogResult.Ok && !String.IsNullOrEmpty(dialog.FileName))
-            //{
-            //    filepathTextBox.Text = dialog.FileName;
-            //}
+            if (result == CommonFileDialogResult.Ok && !String.IsNullOrEmpty(dialog.FileName))
+            {
+                filepathTextBox.Text = dialog.FileName;
+            }
 
-            //dialog.Dispose();
+            dialog.Dispose();
         }
     }
 }

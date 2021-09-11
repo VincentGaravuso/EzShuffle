@@ -2,70 +2,108 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "WindowsAPICodePack/1.1.2": {
+      "Microsoft-WindowsAPICodePack-Core/1.1.4": {
         "type": "package",
         "compile": {
-          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.dll": {}
+          "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.dll": {}
         },
         "runtime": {
-          "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.Sensors.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {},
-          "lib/Microsoft.WindowsAPICodePack.dll": {}
-        }
+          "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "Microsoft-WindowsAPICodePack-Shell/1.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft-WindowsAPICodePack-Core": "1.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
       }
     }
   },
   "libraries": {
-    "WindowsAPICodePack/1.1.2": {
-      "sha512": "1POQrQOlLPB996AmezxnzLp1okN4gnuDsF6b3ka5dPassA139sJwL80fJGkleRMDzUCAU0rjmBc/2ZievbPhxQ==",
+    "Microsoft-WindowsAPICodePack-Core/1.1.4": {
+      "sha512": "gsEStalyKPTR5/HKyAHYvIoDZTGUTUgIBS1eeGvkjWgDYB7f5aSBFAAJfxhhDsOGDjLs6O0uzw1H0EWYWZGDmg==",
       "type": "package",
-      "path": "windowsapicodepack/1.1.2",
+      "path": "microsoft-windowsapicodepack-core/1.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "content/Windows Logo.png",
-        "content/license.txt",
-        "lib/Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll",
-        "lib/Microsoft.WindowsAPICodePack.Sensors.dll",
-        "lib/Microsoft.WindowsAPICodePack.Shell.dll",
-        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll",
-        "lib/Microsoft.WindowsAPICodePack.dll",
-        "windowsapicodepack.1.1.2.nupkg.sha512",
-        "windowsapicodepack.nuspec"
+        "lib/net452/Microsoft.WindowsAPICodePack.dll",
+        "lib/net452/Microsoft.WindowsAPICodePack.xml",
+        "lib/net462/Microsoft.WindowsAPICodePack.dll",
+        "lib/net462/Microsoft.WindowsAPICodePack.xml",
+        "lib/net472/Microsoft.WindowsAPICodePack.dll",
+        "lib/net472/Microsoft.WindowsAPICodePack.xml",
+        "lib/net48/Microsoft.WindowsAPICodePack.dll",
+        "lib/net48/Microsoft.WindowsAPICodePack.xml",
+        "lib/netcoreapp3.0/Microsoft.WindowsAPICodePack.dll",
+        "lib/netcoreapp3.0/Microsoft.WindowsAPICodePack.xml",
+        "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.dll",
+        "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.xml",
+        "microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+        "microsoft-windowsapicodepack-core.nuspec"
+      ]
+    },
+    "Microsoft-WindowsAPICodePack-Shell/1.1.4": {
+      "sha512": "EtoEx9Fx3ZGW//sni9TB1vuBvzXIlyG8E2KNaX7bqV240aiU8RP+NmDHd1ox0YKbJDMxq7AWSI2jPhpLMYXKyw==",
+      "type": "package",
+      "path": "microsoft-windowsapicodepack-shell/1.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/net452/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/net462/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/net462/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/net472/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/net472/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/net48/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/net48/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/netcoreapp3.0/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/netcoreapp3.0/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/netcoreapp3.1/Microsoft.WindowsAPICodePack.Shell.xml",
+        "microsoft-windowsapicodepack-shell.1.1.4.nupkg.sha512",
+        "microsoft-windowsapicodepack-shell.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "WindowsAPICodePack >= 1.1.2"
+      "Microsoft-WindowsAPICodePack-Shell >= 1.1.4"
     ]
   },
   "packageFolders": {
     "C:\\Users\\vinny\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\FileShuffle.csproj",
+      "projectUniqueName": "C:\\Users\\vinny\\OneDrive\\Desktop\\temp\\EzShuffle\\FileShuffle\\FileShuffle.csproj",
       "projectName": "FileShuffle",
-      "projectPath": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\FileShuffle.csproj",
+      "projectPath": "C:\\Users\\vinny\\OneDrive\\Desktop\\temp\\EzShuffle\\FileShuffle\\FileShuffle.csproj",
       "packagesPath": "C:\\Users\\vinny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\obj\\",
+      "outputPath": "C:\\Users\\vinny\\OneDrive\\Desktop\\temp\\EzShuffle\\FileShuffle\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -90,9 +128,9 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "WindowsAPICodePack": {
+          "Microsoft-WindowsAPICodePack-Shell": {
             "target": "Package",
-            "version": "[1.1.2, )"
+            "version": "[1.1.4, )"
           }
         },
         "imports": [
@@ -113,20 +151,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WindowsAPICodePack 1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "WindowsAPICodePack",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

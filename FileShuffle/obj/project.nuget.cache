@@ -1,21 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pzWsatDInzMmT9FlSHTuqYXUBpeUnHw4SL2hbIS26+OsZT5fBa9YO3lhNq+ZVmbAjBMtgCJV/XxN42xs4+V2zg==",
+  "dgSpecHash": "dH8TGgFdH/0RHs2CWpTFe5De5qeyRl7F2G3Zq/BZsUq49ubgcO91B1Pztja4Dv6Nd1w4YZQI9eXtwy1ZhrHAOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinny\\source\\repos\\FileShuffle\\FileShuffle\\FileShuffle.csproj",
+  "projectFilePath": "C:\\Users\\vinny\\OneDrive\\Desktop\\temp\\EzShuffle\\FileShuffle\\FileShuffle.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vinny\\.nuget\\packages\\windowsapicodepack\\1.1.2\\windowsapicodepack.1.1.2.nupkg.sha512"
+    "C:\\Users\\vinny\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.4\\microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+    "C:\\Users\\vinny\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.4\\microsoft-windowsapicodepack-shell.1.1.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WindowsAPICodePack 1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "WindowsAPICodePack",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
